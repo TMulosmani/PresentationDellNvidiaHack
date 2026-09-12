@@ -455,7 +455,6 @@ const MAIN_NAV_ITEMS = [
   { label: 'Groundwork', id: 'how-it-works' },
   { label: 'Onboarding', id: 'onboarding' },
   { label: 'Demo', id: 'demo' },
-  { label: 'Output', id: 'pdf-output' },
   { label: 'Market', id: 'market-size' },
   { label: 'Expansion', id: 'expansion' },
   { label: 'Competition', id: 'competition' },
@@ -814,36 +813,8 @@ const Index = () => {
                 <span className="text-primary">Groundwork</span> Video Demo
               </h1>
             </div>
-            <div className="rounded-2xl overflow-hidden border border-primary/30 bg-black shadow-[0_30px_90px_rgba(0,0,0,0.4)]">
-              <video
-                className="w-full h-auto"
-                controls
-                playsInline
-                preload="metadata"
-              >
-                <source src="/demo.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          </div>
-        </Section>
-
-        <Section id="pdf-output" className="bg-transparent" contentClassName="max-w-6xl py-10">
-          <div className="space-y-6">
-            <div className="text-center">
-              <h1 className="text-4xl md:text-6xl font-bold text-foreground">
-                <span className="text-primary">Groundwork</span> PDF Output
-              </h1>
-              <p className="mt-3 text-lg md:text-xl text-muted-foreground">
-                Auto-generated security report with findings, severity ratings, and remediation guidance.
-              </p>
-            </div>
-            <div className="rounded-2xl overflow-hidden border border-primary/30 bg-white shadow-[0_30px_90px_rgba(0,0,0,0.4)]" style={{ height: '70vh' }}>
-              <iframe
-                src="/dispatch-output.pdf"
-                className="w-full h-full"
-                title="Groundwork PDF Output"
-              />
+            <div className="rounded-2xl overflow-hidden border border-primary/30 bg-card/50 flex items-center justify-center" style={{ height: '60vh' }}>
+              <p className="text-xl text-muted-foreground">Demo video coming soon</p>
             </div>
           </div>
         </Section>
