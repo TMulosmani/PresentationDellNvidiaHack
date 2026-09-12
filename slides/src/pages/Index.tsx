@@ -813,8 +813,14 @@ const Index = () => {
                 <span className="text-primary">Groundwork</span> Video Demo
               </h1>
             </div>
-            <div className="rounded-2xl overflow-hidden border border-primary/30 bg-card/50 flex items-center justify-center" style={{ height: '60vh' }}>
-              <p className="text-xl text-muted-foreground">Demo video coming soon</p>
+            <div className="rounded-2xl overflow-hidden border border-primary/30 shadow-[0_30px_90px_rgba(0,0,0,0.4)]" style={{ height: '60vh' }}>
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/XeN-OGumtwE"
+                title="Groundwork Demo"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
             </div>
           </div>
         </Section>
